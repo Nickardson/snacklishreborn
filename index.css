@@ -67,6 +67,10 @@ body {
     padding: 1em;
 }
 
+#SimpleOutput {
+    font-size: 32px;
+}
+
 .snacklish, 
 .snacklishContainer > span, 
 .snacklishContainer > div {
@@ -112,7 +116,7 @@ body {
 
 .label {
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     color: white;
 }

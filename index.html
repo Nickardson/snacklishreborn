@@ -9,10 +9,13 @@
             <span id="Title" class="snacklish">Snacklish Reborn</span>
         </div>
         <div id="Body">
-            <div>
+            <div id="ControlsContainer">
                 <textarea id="Input" class="no-resize"></textarea>
                 <div id="Controls" class="controlbox">
-                    <span id="ConvertButton" class="button label">Convert!</span>
+                    <span>
+                        <span id="ConvertButton" class="button label">Convert!</span>
+                        <span id="LinkButton" class="button label">Create a Link!</span>
+                    </span>
                     <form id="SnackinessControls" oninput="display.value=parseInt(snackiness.value)">
                         <div class="label" name="slider">Snackiness: <output for="snackiness" name="display">60</output>%</div>
                         <input type="range" min="0" max="100" step="20" value="60" class="slider" name="snackiness" id="Snackiness">
@@ -21,6 +24,8 @@
             </div>
             <div id="Output" class="snacklishContainer"></div>
         </div>
+
+        <div id="SimpleOutput" class="snacklishContainer"></div>
     </body>
     <script type="module" src="index.js"></script>
     <script type="module" src="./src/converter.js"></script>
